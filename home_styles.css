@@ -1,0 +1,9 @@
+.welcome-box{
+    display: flex;
+    width: 20%;
+    height: 174px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: #AEBD92;
+}
