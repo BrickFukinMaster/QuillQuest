@@ -102,12 +102,9 @@ footer {
   font-size: 40px; /* Set the font size of your social media icons */
   color: #FFF; /* Set the color of your social media icons */
 }
-
   .social-icon:hover{
     color: #F6D27A;
   }
-
-
 /*--------------homepage----------------------*/
 .hero-section {
   display: flex;
@@ -280,6 +277,25 @@ footer {
     background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
       linear-gradient(to top left, rgba(246, 210, 122, 0.3), rgba(0, 0, 0, 0));
   }
+/*----------------------about us--------------------------- */
+ .text-cont{
+
+ }
+
+ .quote-box{
+  font-family: "joschmi", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #36452E;
+  background-image: url;
+  font-size: 100px;
+  box-shadow: 8px 8px 0px 0px #36452E;
+  border: solid 4px black;
+  border-radius: 12px;
+  height: 120px; 
+ }
 
 
 
