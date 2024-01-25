@@ -1,9 +1,23 @@
-.welcome-box{
-    display: flex;
-    width: 20%;
-    height: 174px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    background-color: #AEBD92;
+
+
+.hero-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
 }
+
+.welcome-box,
+.map-btn,
+.abtus-btn,
+.explore-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section span {
+    font-weight: bold;
+}    

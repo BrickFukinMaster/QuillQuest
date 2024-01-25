@@ -15,6 +15,7 @@ nav {
   background-color: #AEBD92;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 #logo {
@@ -53,16 +54,13 @@ h1, span {
 
 ul li a:hover {
   color: #F6D27A;
-  font-size: 32px; 
- 
 }
 
 footer {
   background-color: #AEBD92;
   color: #fff;
   padding: 20px;
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 100%;
 }
 
@@ -110,3 +108,101 @@ footer {
   max-width: 600px;
   margin-top: 10px;
 }
+/*--------------homepage----------------------*/
+.hero-section {
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px;
+  text-align: center;
+  margin: 100px auto;
+  width: 80%; 
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+}
+.welcome-box,
+.explore-box {
+  font-family: "joschmi", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #36452E;
+  background-color: #AEBD92;
+  font-size: 100px;
+  box-shadow: 8px 8px 0px 0px #36452E;
+  border: solid 3px black;
+  border-radius: 12px;
+  height: 120px; 
+}
+.abtus-btn,
+.map-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  color: #F6D27A;
+  background-color: #AEBD92;
+  font-family: "carlmarx", sans-serif; 
+  font-size: 60px;
+  font-weight: 750;
+  box-shadow: 8px 8px 0px 0px #36452E;
+  border: solid 3px black;
+  border-radius: 12px;
+  height: 340px; 
+  cursor: pointer;
+}
+  .abtus-btn{
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url('imgs/meettheblogers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+  }
+  .map-btn{
+    background-image: 
+    linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+    url('imgs/searchbylocationbutton.jpg');
+    background-size:cover ;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+  }
+    .map-btn:hover{
+      background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+      linear-gradient(to top left,rgba(246, 210, 122, 0.4), rgba(0, 0, 0, 0)),
+      url('imgs/searchbylocationbutton.jpg');
+    }
+    .abtus-btn:hover{
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+      linear-gradient(to top left,rgba(246, 210, 122, 0.4), rgba(0, 0, 0, 0)),
+      url('imgs/meettheblogers.jpg');
+    }
+.nblog{
+  font-family: "joschmi", sans-serif;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  padding: 20px;
+  color: #36452E;
+  background-color: #AEBD92;
+  font-size: 50px;
+  box-shadow: 8px 8px 0px 0px #36452E;
+  border: solid 3px black;
+  border-radius: 12px;
+  height: 70px; 
+  margin: 100px auto;
+  width: 80%;
+}
+
+.cards-home {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
