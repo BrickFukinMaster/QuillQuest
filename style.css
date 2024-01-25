@@ -3,11 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background-color: #F1EEDF;
 }
-
 nav {
   display: flex;
   width: 100%;
@@ -17,21 +15,17 @@ nav {
   align-items: center;
   position: relative;
 }
-
 #logo {
   margin-left: 165px;
 }
-
 ul {
   display: flex;
   list-style: none;
   margin-right: 165px;
 }
-
 li {
   margin: 0 15px;
 }
-
 a {
   color: #FFF;
   font-family: "carlmarx", sans-serif;
@@ -42,7 +36,6 @@ a {
   transition: font-size 0.30s ease;
   
 }
-
 h1, span {
   color: #F6D27A;
   font-family: "joschmi", sans-serif;
@@ -51,11 +44,9 @@ h1, span {
   font-size: 36px;
   font-weight: bold;
 }
-
 ul li a:hover {
   color: #F6D27A;
 }
-
 footer {
   background-color: #AEBD92;
   color: #fff;
@@ -63,17 +54,15 @@ footer {
   position: relative;
   width: 100%;
 }
-
 .footer-content {
-  max-width: 960px;
+  max-width: auto;
   margin-left: 160px;
   display:flex;
+  flex-direction: row;
 }
-
 .footer-logo h1 {
   margin: 0;
 }
-
 .footer-divider {
   height: 120px;
   border-radius: 12px;
@@ -82,32 +71,43 @@ footer {
   margin-left: 20px;
   margin-right: 20px;
 }
-
 .filter-text-content {
   display: flex;
   flex-direction: column;
 }
-
 .links ul {
   list-style: none;
   padding: 0;
 }
-
 .links li {
   margin-bottom: 10px;
   margin-right: 20px;
 }
-
 .links a {
   color: #FFF;
   text-decoration: none;
 }
-
 .footer-text p {
   text-align: left;
   max-width: 600px;
-  margin-top: 10px;
+  margin: 15px;
 }
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin:auto;
+}
+.social-icon {
+  padding: 20px;
+  font-size: 40px; /* Set the font size of your social media icons */
+  color: #FFF; /* Set the color of your social media icons */
+}
+
+  .social-icon:hover{
+    color: #F6D27A;
+  }
+
+
 /*--------------homepage----------------------*/
 .hero-section {
   display: flex;
@@ -134,7 +134,7 @@ footer {
   background-color: #AEBD92;
   font-size: 100px;
   box-shadow: 8px 8px 0px 0px #36452E;
-  border: solid 3px black;
+  border: solid 4px black;
   border-radius: 12px;
   height: 120px; 
 }
@@ -148,37 +148,39 @@ footer {
   background-color: #AEBD92;
   font-family: "carlmarx", sans-serif; 
   font-size: 60px;
-  font-weight: 750;
+  font-weight: 700;
   box-shadow: 8px 8px 0px 0px #36452E;
-  border: solid 3px black;
+  border: solid 4px black;
   border-radius: 12px;
   height: 340px; 
   cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
 }
   .abtus-btn{
     background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
-    url('imgs/meettheblogers.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    url('imgs/meettheblogers.jpg'); 
     align-items: flex-end;
   }
   .map-btn{
     background-image: 
     linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url('imgs/searchbylocationbutton.jpg');
-    background-size:cover ;
-    background-repeat: no-repeat;
     align-items: flex-start;
   }
     .map-btn:hover{
       background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
       linear-gradient(to top left,rgba(246, 210, 122, 0.4), rgba(0, 0, 0, 0)),
       url('imgs/searchbylocationbutton.jpg');
+      box-shadow: 5px 5px 0px 0px #F6D27A;
     }
     .abtus-btn:hover{
       background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
       linear-gradient(to top left,rgba(246, 210, 122, 0.4), rgba(0, 0, 0, 0)),
       url('imgs/meettheblogers.jpg');
+      box-shadow: 5px 5px 0px 0px #F6D27A;
     }
 .nblog{
   font-family: "joschmi", sans-serif;
@@ -190,17 +192,98 @@ footer {
   background-color: #AEBD92;
   font-size: 50px;
   box-shadow: 8px 8px 0px 0px #36452E;
-  border: solid 3px black;
+  border: solid 4px black;
   border-radius: 12px;
   height: 70px; 
-  margin: 100px auto;
+  margin: auto;
   width: 80%;
 }
-
 .cards-home {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  width: 80%;
+  margin: 40px auto 100px auto;
+  gap: 30px;
 }
+  .card-btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #AEBD92;
+    border: black solid 3px;
+    border-radius: 12px;
+    box-shadow: 8px 8px 0px 0px #36452E;
+    width: 400px;
+    height: 600px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  .card-btn:hover {
+    box-shadow: 5px 5px 0px 0px #F6D27A;
+  }
+  .card-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    transition: background-image 0.9s ease;
+  }
+  #card1, #card2, #card3 {
+    background-size: cover;
+    border: black solid 4px;
+  }
+  #card1 {
+    background-image: url('imgs/italy.jpg');
+  }
+  #card2 {
+    background-image: url('imgs/germany.jpg');
+  }
+  #card3 {
+    background-image: url('imgs/prauge.jpg');
+  }
+  .card-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: auto;
+    max-height: 50%;
+    padding: 20px;
+    backdrop-filter: blur(2px);
+    border-top: black solid 4px;
+
+  }
+  .card-title {
+    font-size: 44px;
+    font-weight: bold;
+    color: #F6D27A;
+  }
+  .card-text {
+    font-size: 26px;
+    font-weight: 100;
+    color: #FFF;
+    padding-top: 10px;
+  }
+  .autor {
+    font-family: Constantia;
+    font-size: 15px;
+    color: #F6D27A;
+  }
+  .card-btn:hover::before {
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+      linear-gradient(to top left, rgba(246, 210, 122, 0.3), rgba(0, 0, 0, 0));
+  }
+
+
+
+
 
 
 
