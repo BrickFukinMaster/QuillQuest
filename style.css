@@ -18,6 +18,12 @@ nav {
 #logo {
   margin-left: 165px;
 }
+#logoQ:hover{
+  color: #F6D27A;
+}
+#quest:hover{
+  color: #ffffff;
+}
 ul {
   display: flex;
   list-style: none;
@@ -277,26 +283,95 @@ footer {
     background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
       linear-gradient(to top left, rgba(246, 210, 122, 0.3), rgba(0, 0, 0, 0));
   }
-/*----------------------about us--------------------------- */
- .text-cont{
+/*----------------------about-us--------------------------- */
+.text-cont{
+font-family: "carlmarx", sans-serif; 
+font-size: 30px;
+font-weight: 100;
+letter-spacing: 0.5px;
+text-align: justify;
 
- }
+color: #ffffff;
+background-color: #657858;
+box-shadow: 8px 8px 0px 0px #36452E;
+border: solid 4px black;
+border-radius: 12px;
 
- .quote-box{
-  font-family: "joschmi", sans-serif;
+display: flex;
+align-items: center;
+justify-content:start;
+padding: 50px;
+}
+#text1{
+height: 380px;
+}
+#text2{
+height: 300px;
+}
+#abthero{
+margin: 100px auto 20px auto;
+}
+#text3{
+width: 80%;
+margin: 20px auto 20px auto;
+}
+#text4{
+width: 80%;
+margin: auto auto 100px auto;
+}
+.quote-box{
+font-family: Constantia;
+font-style: italic;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px;
+color: #ffffff;
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),url('imgs/mapquote.jpg');
+font-size: 30px;
+box-shadow: 8px 8px 0px 0px #36452E;
+border: solid 4px black;
+border-radius: 12px;
+height: 200px; 
+}
+#abt-us{
+  width: 70%;
+  margin-bottom: 40px !important;
+}
+.card-member{
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  color: #36452E;
-  background-image: url;
-  font-size: 100px;
-  box-shadow: 8px 8px 0px 0px #36452E;
-  border: solid 4px black;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: black solid 4px;
   border-radius: 12px;
-  height: 120px; 
- }
+  box-shadow: 8px 8px 0px 0px #36452E;
+  width: 400px;
+  height: 500px;
+  text-decoration: none;
+  color: #ffffff;
+  background-size: cover;
+}
+#member1{
+  background-image: url("imgs/member3.jpg");
+}
+#member2{
+  background-image: url("imgs/member1.jpg");
+}
+#member3{
+  background-image: url("imgs/member2.jpg");
+}
+#abtus-cont{
+  align-items: center !important;
+  font-family: Constantia;
+  font-size: 44px;
+  font-weight: bold;
+  color: #ffffff;
 
+}
+/*--------------contact-us-----------------------------*/
+
+ 
 
 
 
