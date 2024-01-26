@@ -19,11 +19,43 @@
             <li><a href="#">Blogs</a></li>
             <li><a href="#">Map</a></li>
             <li><a href="aboutus.html">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-   <main>
-   </main> 
+    <main>
+        <div class="hero-section">
+            <div class="column">
+                <div class="nblog" id="contactnatips">CONTACT US</div>
+                <div class="contact-box">
+                            <form action="/submit_form" method="post">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                  </div>
+                                  <div class="form-group">
+                                    <textarea class="form-control" id="notes" name="notes" placeholder="Write us a message" rows="3"></textarea>
+                                  </div>
+                                <button type='submit' class="send-btn">SEND</button>
+                            </form>
+                        </div>
+                    </div>
+            <div class="column">
+                    <iframe class="map-box"
+                        width="600"
+                        height="500"
+                        loading="lazy"
+                        allowfullscreen
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6065.546423733873!2d15.94218988794969!3d45.809951799555705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6d0241612a7%3A0x3871da416ea5d774!2sGradi%C5%A1%C4%87anska%20ul.%2024%2C%2010000%2C%20Zagreb!5e0!3m2!1sen!2shr!4v1686374691792!5m2!1sen!2shr" 
+                        ">
+                    </iframe>
+            </div>
+        </div>
+        
+        
+        
+    </main>
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
@@ -34,7 +66,7 @@
                 <div class="footer-links">
                     <ul>
                         <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                         <li><a href="#">Blogs</a></li>
                     </ul>
                 </div>

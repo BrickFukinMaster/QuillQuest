@@ -370,8 +370,66 @@ height: 200px;
 
 }
 /*--------------contact-us-----------------------------*/
+#contactnatips{
+  width:100%;
+}
+.map-box{
+  border: black solid 4px;
+  border-radius: 12px;
+  box-shadow: 8px 8px 0 0 #36452E;
+}
+.contact-box{
+  background-color: #657858;
+  border: black 4px solid;
+  border-radius:12px;
+  box-shadow: 8px 8px 0 0 #36452E;
+  height: 410px;
+  padding: 20px 0 20px 0px;
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
- 
+.form-control {
+  background-color: #F1EEDF;
+  color: #36452E;
+  font-family: "carlmarx", sans-serif;
+  padding: 12px;
+  font-size: 20px; /* Adjust the font size as needed */
+  border: 3px solid #000000; /* Adjust the border color as needed */
+  border-radius: 12px;
+  width: 90%;
+}
+#notes{
+  height: 120px;
+}
+.send-btn{
+  font-family: "joschmi", sans-serif;
+  font-weight: 900;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  padding: 20px;
+  color: #36452E;
+  background-color: #F6D27A;
+  font-size: 50px;
+  box-shadow: 8px 8px 0px 0px #36452E;
+  border: solid 4px black;
+  border-radius: 12px;
+  height: 70px; 
+  margin: auto;
+  width: 90%;
+}
+
+.send-btn:hover{
+  color: #AEBD92;
+  box-shadow: 4px 4px 0 0 #36452E;
+}
+
+
 
 
 
