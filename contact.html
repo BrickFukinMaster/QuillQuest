@@ -11,17 +11,18 @@
     <title>contactus</title>
 </head>
 <body>
-    <nav>
-        <div id="logo">
-            <h1><a href="Homepage.html" id="logoQ">Quill<span id="quest">QUEST</span></a></h1>
+    <div class="topnav" id="myTopnav">
+        <div class="nav-space">
+            <a href="Homepage.html" id="logoQ">Quill<span id="quest">QUEST</span></a>
+        <a href="#">Blogs</a>
+        <a href="#">Map</a>
+        <a href="aboutus.html">About</a>
+        <a href="contact.html">Conntact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
         </div>
-        <ul>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Map</a></li>
-            <li><a href="aboutus.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    </div>
     <main>
         <div class="hero-section">
             <div class="column">
@@ -81,5 +82,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+
 </body>
 </html>

@@ -11,17 +11,16 @@
     <title>aboutus</title>
 </head>
 <body>
-    <nav>
-        <div id="logo">
-            <h1><a href="Homepage.html" id="logoQ">Quill<span id="quest">QUEST</span></a></h1>
-        </div>
-        <ul>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Map</a></li>
-            <li><a href="aboutus.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="topnav" id="myTopnav">
+        <a href="Homepage.html" id="logoQ">Quill<span id="quest">QUEST</span></a>
+        <a href="#">Blogs</a>
+        <a href="#">Map</a>
+        <a href="aboutus.html">About</a>
+        <a href="contact.html">Conntact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
    <main>
     <div class="hero-section" id="abthero">
         <div class="column">
@@ -79,7 +78,6 @@
         unexplored territories of knowledge, inspiration, and adventure. Adventure beckons, and the quill is
         poised to record the tales that unfold. Join the expedition-let the exploration continue!
     </div>
-
    </main> 
     <footer>
         <div class="footer-content">
@@ -106,5 +104,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+
 </body>
 </html>
