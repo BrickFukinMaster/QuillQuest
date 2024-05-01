@@ -597,7 +597,67 @@ height: 200px;
   }
 }
 
+/*--------------Region Select-----------------------------------*/
 
+.ConBanner{
+  font-family: "joschmi", sans-serif;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  padding: 20px;
+  color: #36452E;
+  background-color: #AEBD92;
+  font-size: 50px;
+  box-shadow: 8px 8px 0px 0px #36452E;
+  border: solid 4px black;
+  border-radius: 12px;
+  height: 70px; 
+  margin: 50px auto 0;
+  width: 80%;
+}
+
+.continentGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  width: 80%;
+  margin: 40px auto 100px auto;
+  gap:70px;
+}
+  
+#Cont1, #Cont2, #Cont3, #Cont4, #Cont5, #Cont6{
+  width: 300px;
+  height: 300px;
+}
+
+#Cont1{
+  background-image: url(imgs/NA-btn-pic.jpg);
+  background-size: cover;
+}
+#Cont2{
+  background-image: url(imgs/SA-btn-pic.jpg);
+  background-size: cover;
+}
+#Cont3{
+  background-image: url(imgs/EU-btn-pic.jpg);
+  background-size: cover;
+}
+#Cont4{
+  background-image: url(imgs/AS-btn-pic.jpg);
+  background-size: cover;
+}
+#Cont5{
+  background-image: url(imgs/AF-btn-pic.jpg);
+  background-size: cover;
+}
+#Cont6{
+  background-image: url(imgs/AU-btn-pic.jpg);
+  background-size: cover;
+}
+
+#ct-con{
+  text-align: center;
+}
 
 
 
