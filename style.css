@@ -7,6 +7,19 @@ body {
   background-color: #F1EEDF;
 }
 
+p{
+  font-family: "forma-djr-micro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2{
+  font-family: "manometer-serif-normal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /*--------------NABVAR---------------*/
 #logoQ:hover{
   color: #F6D27A;
@@ -345,7 +358,7 @@ footer {
     flex-direction: column;
     justify-content: flex-end;
     background-color: rgba(0, 0, 0, 0.5);
-    height: auto;
+    height:auto;
     max-height: 50%;
     padding: 20px;
     backdrop-filter: blur(2px);
@@ -353,19 +366,21 @@ footer {
 
   }
   .card-title {
-    font-size: 44px;
-    font-weight: bold;
+    font-size: 30pt;
+    font-weight: 100;
     color: #F6D27A;
   }
   .card-text {
-    font-size: 26px;
+    font-size: 16pt;
     font-weight: 100;
     color: #FFF;
     padding-top: 10px;
   }
   .autor {
-    font-family: Constantia;
-    font-size: 15px;
+    font-family: "manometer-serif-low", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20pt;
     color: #F6D27A;
   }
   .card-btn:hover::before {
@@ -600,7 +615,9 @@ height: 200px;
 /*--------------Region Select-----------------------------------*/
 
 .ConBanner{
-  font-family: "joschmi", sans-serif;
+  font-family: "manometer-serif-normal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   display: flex;
   align-items: center; 
   justify-content: center;
@@ -654,13 +671,96 @@ height: 200px;
   background-image: url(imgs/AU-btn-pic.jpg);
   background-size: cover;
 }
-
 #ct-con{
   text-align: center;
 }
 
 
+/*--------------------Blogs-----------------------------------*/
 
+.blogframe{
+  display: flex;
+  flex-direction: column;
+  background-color: #657858;
+  box-shadow: 8px 8px 0 0 #36452E;
+  border-radius: 12px;
+  width: 80%;
+  height: auto;
+  margin: 60px auto;
+  border:solid black 3px;
+}
+
+.b-date{
+  background-color:#AEBD92;
+  width: 100%;
+  border-radius: 12px 12px 0px 0px;
+  text-align: right;
+  padding: 10px;
+  font-family: "manometer-serif-low", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 16pt;
+  color: white;
+  border-bottom:solid black 3px;
+}
+
+.Bimg{
+  width: 100%;
+  height: 300px;
+  background-image: url(imgs/Prauge-b-photo.jpg);
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  border-bottom:solid black 3px;
+}
+
+.blogcontent{
+  color: #f2f2f2;
+  align-self: flex-start;
+  margin: 20px 40px;
+}
+
+.blog-text{
+  margin-bottom: 30px;
+  font-size: 18pt;
+  text-align: justify;
+}
+
+.blog-h{
+  margin-bottom: 20px;
+  font-size: 45pt;
+}
+
+h2 .author {
+  font-family: "manometer-serif-normal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 27.8pt;
+  color: #F6D27A;
+}
+
+.read-btn{
+  font-family: "manometer-serif-normal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  color: #36452E;
+  background-color: #F6D27A;
+  font-size: 24pt;
+  box-shadow: 8px 8px 0px 0px #36452E;
+  border: solid 4px black;
+  border-radius: 12px;
+  height: 60px; 
+  width:auto;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+}
+  .read-btn:hover{
+    color: #657858;
+    box-shadow: 4px 4px 0 0 #36452E;
+  }
 
 
 
