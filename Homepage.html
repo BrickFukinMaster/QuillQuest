@@ -12,29 +12,32 @@
     <title>Homepage</title>
 </head>
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="Homepage.html" id="logoQ">Quill<span id="quest">QUEST</span></a>
-        <a href="blogs.html">Blogs</a>
-        <a href="RegionSelect.html">Map</a>
-        <a href="aboutus.html">About</a>
-        <a href="contact.html">Conntact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </div>
-      
+    <nav>
+        <ul class='topnav'>
+          <li class='logo'><a href="Homepage.html" id="logoQ">Quill<span class="logo_span">Quest</span></a></li>
+          <input type='checkbox' id='check' />
+          <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+          <span class="menu">
+            <li><a href="RegionSelect.html">Locations</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+          </span>
+        </ul>
+      </nav>
+            
    <main>
     <div class="hero-section">
         <div class="column">
             <div class="welcome-box">Welcome!</div>
-            <a href="#" class="map-btn">SEARCH BY LOCATION</a>
+            <a href="RegionSelect.html" class="map-btn">Search by location</a>
         </div>
         <div class="column">
-            <a href="aboutus.html" class="abtus-btn" >MEET THE BLOGGERS</a>
-            <div class="explore-box">EXLORE A BIT!</div>
+            <a href="aboutus.html" class="abtus-btn" >Meet the bloggers</a>
+            <div class="explore-box">Explore a bit!</div>
         </div>
     </div>
-    <div class="nblog">NEWEST BLOGS</div>
+    <div class="nblog">Newest Blogs</div>
     <div class="cards-home">
         <a href="#" class="card-btn" id="card1">
             <div class="card-cont">
@@ -80,42 +83,37 @@
             </div></a>
     </div>
    </main> 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <h1><a href="#homepage">Quill<span>QUEST</span></a></h1>
-            </div>
-            <div class="footer-divider"></div>
-            <div class="filter-text-content">
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#">Blogs</a></li>
-                    </ul>
-                </div>
-                <div class="footer-text">
-                    <p>Embark on a journey beyond boundaries, where every step tells a story of exploration and discovery</p>
-                </div> 
-            </div>
-            <div class="social-icons">
-                <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#" class="social-icon"><i class="fa-brands fa-square-facebook"></i></a>
-            </div>
+
+   <footer class="footer-content">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <p class='logo'><a href="Homepage.html" id="logoQ">Quill<span class="logo_span">Quest</span></a></p>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-text-content">
+        <div class="footer-links">
+          <ul>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="RegionSelect.html">Locations</a></li>
+          </ul>
         </div>
-    </footer>
-
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-    </script>
-
+        <div class="footer-text">
+          <p>Embark on a journey beyond boundaries, where every step tells a story of exploration and discovery</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-right">
+      <div class="social">
+        <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+        <p>Follow us!</p>
+      </div>
+    </div>
+  </footer>
+  
 </body>
 </html>
