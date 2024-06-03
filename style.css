@@ -20,7 +20,7 @@ p, a, ul, li{
   font-family: "forma-djr-micro", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18pt;
+  font-size: 18px;
   color: white;
   text-decoration: none;
 }
@@ -29,14 +29,14 @@ h2{
   font-family: "manometer-serif-normal", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 45pt;
+  font-size: 60px;
 }
 
 h3{
   font-family: "manometer-serif-normal", sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 28pt;
+  font-size: 36px;
 }
 
 /*--------------NABVAR---------------*/
@@ -44,7 +44,7 @@ h3{
   font-family: "manometer-serif-low", sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 30pt;
+  font-size: 40px;
   color: #F1EEDF;
 }
 
@@ -202,6 +202,7 @@ ul li a:hover {
 /*-----------------footer--------------*/
 .footer-content {
   display: flex;
+  flex-direction: row;
   justify-content: space-between; 
   align-items: center;
   margin: 20px;
@@ -275,11 +276,11 @@ ul li a:hover {
 
 .footer-text p {
   text-align: left;
-  max-width: 500px;
+  max-width: 600px;
   font-family: "manometer-serif-low", sans-serif;
   font-weight: 100;
   font-style: oblique;
-  font-size: 20pt;
+  font-size: 25pt;
   color: var(--detail-color-light);
 }
 
@@ -307,9 +308,93 @@ ul li a:hover {
   font-family: "manometer-serif-low", sans-serif;
   font-weight: 100;
   font-size: 32pt;
-  color: var(--detail-color-light);
+  color: var(--detail-color-button);
 }
 
+@media (max-width: 1024px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center; 
+    height: auto; 
+  }
+
+  .footer-left{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-right {
+    margin-right: 0; 
+    justify-content: flex-start; 
+    width: 100%;
+  }
+
+  .footer-divider {
+    height: 5px; 
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .footer-logo, .footer-text-content, .footer-links, .social {
+    width: 100%; 
+    margin: 10px 0; 
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-links a {
+    font-size: 20pt; 
+  }
+
+  .footer-text p {
+    font-size: 18pt; 
+    width: 300px;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .social p {
+    font-size: 24pt;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer-links ul {
+    font-size: 50pt;
+    gap: 10px;
+  }
+
+  .footer-links a {
+    font-size: 22pt; 
+    margin-right: 10px;
+  }
+
+  .footer-text p {
+    font-size: 22pt; 
+    width: auto;
+  }
+
+  .social-icons i {
+    justify-content: flex-start;
+    font-size: 30pt;
+  }
+
+  .social p {
+    font-size: 22pt;
+  }
+}
 
 
 /*--------------homepage----------------------*/
@@ -490,13 +575,41 @@ ul li a:hover {
     background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
       linear-gradient(to top left, rgba(246, 210, 122, 0.3), rgba(0, 0, 0, 0));
   }
-
-  @media (max-width: 1200px) {
+  @media (max-width: 1024px) {
     .hero-section {
+      flex-direction: column;
+      width: 80%;
+    }
+    .cards-home {
       flex-direction: column;
       align-items: center;
     }
+    .card-btn {
+      max-width: none;
+      width: 100%;
+    }
+    .card-title{
+      font-size:30px;
+    }
+    .card-text{
+      font-size: 20px;
+    }
+    .welcome-box,
+    .explore-box,
+    .abtus-btn,
+    .map-btn{
+      font-size: 50px;
+    }
+    .nblog {
+      font-size: 35px;
+    }
+    .map-btn,
+    .abtus-btn {
+      height: 280px;
+    }
+  }
   
+  @media (max-width: 1281px) {
     .welcome-box,
     .explore-box,
     .abtus-btn,
@@ -506,34 +619,14 @@ ul li a:hover {
     .nblog {
       font-size: 40px;
     }
-  
     .map-btn,
     .abtus-btn {
       height: 280px;
     }
   }
 
-  @media (max-width: 768px) {
-    .hero-section {
-      width: 90%;
-    }
-  
-    .cards-home {
-      flex-direction: column;
-    }
-  
-    .card-btn {
-      max-width: none;
-      width: 100%;
-    }
 
-    .card-title{
-      font-size:30px;
-    }
-    .card-text{
-      font-size: 20px;
-    }
-  }
+    
 
 /*----------------------about-us--------------------------- */
 .text-cont{ 
@@ -620,11 +713,16 @@ height: 200px;
   color: #ffffff;
 }
 
-
-@media only screen and (max-width: 767px) {
+@media(max-width: 1281px) {
   .text-cont {
     padding: 20px;
-    font-size: 18px; 
+    font-size: 15pt; 
+  }
+}
+@media(max-width: 767px) {
+  .text-cont {
+    padding: 20px;
+    font-size:12pt !important;
   }
 
   .card-member {
@@ -633,31 +731,37 @@ height: 200px;
   }
 
   .nblog {
-    font-size: 24px; 
+    font-size: 36px; 
     margin-bottom: 20px; 
   }
 
   #abtus-cont {
-    font-size: 24px; 
+    font-size: 24pt; 
   }
 }
 
 /*--------------contact-us-----------------------------*/
+
+#contact-hs{
+  height: auto;
+}
 #contactnatips{
   width:100%;
+  margin: 0;
 }
 .map-box{
   border: black solid 4px;
   border-radius: 12px;
   box-shadow: 8px 8px 0 0 #36452E;
   width: auto;
+  height: 100%;
 }
 .contact-box{
   background-color: #657858;
   border: black 4px solid;
   border-radius:12px;
   box-shadow: 8px 8px 0 0 #36452E;
-  height: 410px;
+  height: 100%;
   padding: 20px 0 20px 0px;
 }
 .form-group {
@@ -678,7 +782,7 @@ height: 200px;
   width: 90%;
 }
 #notes{
-  height: 120px;
+  height: 150px;
   resize: none;
 }
 .send-btn{
@@ -702,16 +806,10 @@ height: 200px;
   color: #657858;
   box-shadow: 4px 4px 0 0 #36452E;
 }
-@media only screen and (min-width: 600px) {
+
+@media(max-width: 1024px) {
   .map-box {
-    width: 600px; 
-    height: 500px; 
-  }
-}
-@media only screen and (min-width: 768px) {
-  .map-box {
-    width: 768px;
-    height: 500px;
+    height: 400px; 
   }
 }
 
@@ -746,7 +844,7 @@ height: 200px;
   gap: 30px;
 }
 #ct-con{
-  font-size: 26pt;
+  font-size: 36px;
   font-weight: 700;
   font-style: normal;
 }
@@ -783,6 +881,19 @@ height: 200px;
 }
 #ct-con{
   text-align: center;
+}
+
+@media (max-width: 1024px){
+  .ConBanner, #ct-con{
+    font-size:36px;
+  }
+
+  @media (max-width: 768px){
+    .ConBanner, #ct-con{
+      font-size:24px;
+      text-align: center;
+    }
+  }
 }
 
 
