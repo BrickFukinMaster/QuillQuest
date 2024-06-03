@@ -20,7 +20,7 @@ p, a, ul, li{
   font-family: "forma-djr-micro", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
   text-decoration: none;
 }
@@ -53,15 +53,15 @@ h3{
   font-family: "forma-djr-micro", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 28pt;
+  font-size: 36px;
 }
 
 #logoQ:hover {
-  color: #F6D27A;
+  color: var(--detail-color-button);
 }
 
 ul li a:hover {
-  color: #F6D27A;
+  color: var(--detail-color-button);
 }
 
 .nav-space {
@@ -96,7 +96,7 @@ ul li a:hover {
   text-align: center;
   padding: 15px 16px;
   text-decoration: none;
-  font-size: 28pt;
+  font-size: 36px;
   font-weight: 600;
 }
 
@@ -195,6 +195,12 @@ ul li a:hover {
 
   #check:checked ~ .menu {
     display: flex;
+  }
+}
+
+@media(max-width: 1024px){
+  .topnav a{
+    font-size: 30px;
   }
 }
 
@@ -920,7 +926,7 @@ height: 200px;
   font-family: "manometer-serif-low", sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 16pt;
+  font-size: 21px;
   color: white;
   border-bottom: #000000 solid 4px;
 
@@ -953,7 +959,7 @@ h2 .author {
   font-family: "manometer-serif-normal", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 27.8pt;
+  font-size: 36px;
   color: #F6D27A;
 }
 
@@ -961,12 +967,12 @@ h2 .author {
   font-family: "manometer-serif-normal", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 36px;
   display: flex;
   align-items: center; 
   justify-content: center;
   color: #36452E;
   background-color: #F6D27A;
-  font-size: 24pt;
   box-shadow: 8px 8px 0px 0px #36452E;
   border: solid 4px black;
   border-radius: 12px;
@@ -979,8 +985,43 @@ h2 .author {
     color: #657858;
     box-shadow: 4px 4px 0 0 #36452E;
   }
-/*----------blog------------------------------*/
 
+
+  @media (max-width: 1024px){
+    .blogcontent h2{
+      font-size: 45px;
+    }
+    h2 .author, .read-btn{
+      font-size:36px;
+    }
+    .b-date{
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 768px){
+    .blogframe p{
+      font-size: 16px;
+    }
+    .blogcontent h2{
+      font-size: 36px;
+    }
+    h2 .author, .read-btn{
+      font-size:24px;
+    }
+  }
+
+  @media (min-width: 360px){
+    .blogcontent h2{
+      font-size: 30px;
+    }
+    h2 .author{
+      font-size:24px;
+    }
+  }
+  
+  
+/*----------blog------------------------------*/
 #blogframe1{
   width: 95%;
   background-color: #AEBD92;
@@ -1008,6 +1049,7 @@ h2 .author {
   flex-direction: row;
   gap: 20px;
   margin:25px 25px 0px 25px;
+  height: 450px;
 }
 
 .b-text-box{
@@ -1026,13 +1068,13 @@ h2 .author {
   #btb-half{
     width: auto;
     max-width: 50%;
-    height: 500px;
+    height:100%;
   }
   #btb-full{
     width: auto;
     max-width: 100%;
     margin:25px 25px 0px 25px;
-    height: 320px;
+    height:auto;
     gap: 10px;
   }
 
@@ -1044,7 +1086,7 @@ h2 .author {
   border: black solid 4px;
   border-radius: 12px;
   width: auto;
-  height: 500px;
+  height: 100%;
   overflow: hidden;
 }
   #smoll_img{
@@ -1084,3 +1126,80 @@ h2 .author {
   height: auto !important;
   margin:25px !important;
 }
+
+
+@media (max-width: 1280px){
+  .b-row{
+    height: 500px;
+  }
+  .b-text-box p, li, ul {
+    font-size: 18px;
+  }
+  .b-text-box h3 {
+    font-size: 30px;
+  }
+  .b-heading{
+    height: 150px;
+  }
+    .b-heading h2{
+      font-size: 45px;
+    }
+    .b-heading h3{
+      font-size: 28px;
+    }
+}
+
+@media (max-width: 1024px){
+
+  .b-row{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100% ;
+    height: auto;
+  }
+  .b-heading{
+    height: 130px;
+  }
+    .b-heading h2{
+      font-size: 36px;
+    }
+    .b-heading h3 {
+      font-size: 24px;
+    }
+
+  .b-text-box p, li, ul {
+    font-size: 16px;
+  }
+  .b-text-box h3 {
+    font-size: 24px;
+  }
+  #btb-half{
+    max-width: 100%;
+    }
+  #smoll_img{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px){ 
+
+  .b-heading{
+    height: 100px;
+  }
+  .b-heading > h2, .b-heading > .autor-b-heading {
+    font-size: 30px;
+  }
+  .b-text-box p, li, ul {
+    font-size: 14px;
+  }
+  .b-text-box h3 {
+    font-size: 22px;
+  }
+}
+
+
+
+
+
+
