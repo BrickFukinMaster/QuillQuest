@@ -777,9 +777,11 @@ height: 200px;
   gap: 30px;
 }
 #ct-con{
-  font-size: 36px;
-  font-weight: 700;
+  font-family: var(--font-family-2);
+  font-size: 60px;
+  font-weight: 100;
   font-style: normal;
+  text-align: center;
 }
 #Cont1, #Cont2, #Cont3, #Cont4, #Cont5, #Cont6{
   width: 100%;
@@ -789,31 +791,23 @@ height: 200px;
 }
 #Cont1{
   background-image: url(imgs/NA-btn-pic.jpg);
-  background-size: cover;
 }
 #Cont2{
   background-image: url(imgs/SA-btn-pic.jpg);
-  background-size: cover;
 }
 #Cont3{
-  background-image: url(imgs/EU-btn-pic.jpg);
-  background-size: cover;
+  background-image: url(imgs/EU-btn-pic.jpg); 
 }
 #Cont4{
   background-image: url(imgs/AS-btn-pic.jpg);
-  background-size: cover;
 }
 #Cont5{
   background-image: url(imgs/AF-btn-pic.jpg);
-  background-size: cover;
 }
 #Cont6{
   background-image: url(imgs/AU-btn-pic.jpg);
-  background-size: cover;
 }
-#ct-con{
-  text-align: center;
-}
+
   @media (max-width: 1024px){
     .ConBanner, #ct-con{
       font-size:36px;
@@ -1090,9 +1084,3 @@ h2 .author {
         font-size: 22px;
       }
     }
-
-
-
-
-
-
