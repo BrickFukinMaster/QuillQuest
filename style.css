@@ -522,6 +522,15 @@ ul li a:hover {
     background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
       linear-gradient(to top left, rgba(246, 210, 122, 0.3), rgba(0, 0, 0, 0));
   }
+    @media (max-width: 1280px)
+    {
+        .welcome-box,
+        .explore-box,
+        .abtus-btn,
+        .map-btn{
+          font-size: 50px;
+        }
+    }
     @media (max-width: 1024px) {
       .hero-section {
         flex-direction: column;
@@ -555,7 +564,6 @@ ul li a:hover {
         height: 280px;
       }
     }
-
     @media (max-width: 768px){
       .welcome-box,
       .explore-box,
@@ -788,6 +796,7 @@ height: 200px;
   height: 300px;
   background-position: center; 
   background-size: cover;
+  background-repeat: no-repeat;
 }
 #Cont1{
   background-image: url(imgs/NA-btn-pic.jpg);
